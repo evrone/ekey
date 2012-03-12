@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["dmitry.koprov@gmail.com"]
   gem.description   = %q{A ruby wrapper for API of the ekey.ru}
   gem.summary       = %q{A ruby wrapper for API of the ekey.ru}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/dkoprov/ekey"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Ekey::VERSION
 
-  s.add_dependency "json_pure"
-  s.add_dependency "rest-client"
+  gem.add_dependency "json_pure"
+  gem.add_dependency "rest-client"
 
 end
