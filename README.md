@@ -20,8 +20,11 @@ Or install it yourself as:
 
 ### api_key setup
 
-First of all, setup `api_key`. To do this, put a file `ekey.rb`
-    Ekey::Config.apy_key = <your_api_key>
+First of all, setup `api_key`. To do this, put a file `ekey.rb` into rails config/initializers directory.
+
+    Ekey::Config.api_key = <your_api_key>
+
+If you aren't using rails, just make shure, api_key fills in before any API methods calls.
 
 ### Sending certificate request
 
