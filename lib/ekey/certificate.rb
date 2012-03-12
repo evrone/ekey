@@ -17,6 +17,8 @@ module Ekey
     CA_UPLOAD_PAGE_URL   = "http://cabinet.ekey.ru/api/1.0/request/put"
     CA_DOWNLOAD_PAGE_URL = "http://cabinet.ekey.ru/api/1.0/certificates/get"
 
+    CERTIFICATE_LINE_LENGTH = 64
+
     # Делит длинную строку base64 на строки по 64 символа.
     # Это требование cabinet.ekey.ru к запросам на выпуск сертификата (CSR).
     def self.add_container_to_csr(cert_req)
