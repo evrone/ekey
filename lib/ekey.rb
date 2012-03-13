@@ -1,4 +1,3 @@
-require "ekey/version"
 require "ekey/certificate"
 
 module Ekey
