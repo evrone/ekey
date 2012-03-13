@@ -66,4 +66,4 @@ Here is the shortened sample of the certificate value:
 
 Copyright (c) 2012 by Dmitry Koprov (dkoprov), evrone.com
 
-This project uses [BSD license](http://www.linfo.org/bsdlicense.html).
+This project uses MIT LICENSE
