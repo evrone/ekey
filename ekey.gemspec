@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["dmitry.koprov@gmail.com"]
   gem.description   = %q{A ruby wrapper for API of the ekey.ru}
   gem.summary       = %q{A ruby wrapper for API of the ekey.ru}
-  gem.homepage      = "https://github.com/dkoprov/ekey"
+  gem.homepage      = "https://github.com/evrone/ekey"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
