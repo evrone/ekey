@@ -1,8 +1,15 @@
+# PLEASE NOTE, THIS PROJECT IS NO LONGER BEING MAINTAINED
 # Ekey
 
 A ruby wrapper for API of the ekey.ru
 
-## Installation
+<a href="https://evrone.com/?utm_source=github.com">
+  <img src="https://evrone.com/logo/evrone-sponsored-logo.png"
+       alt="Sponsored by Evrone" width="231">
+</a>
+
+## Getting Started
+### Installation
 
 Add this line to your application's Gemfile:
 
@@ -15,10 +22,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install ekey
+    
+### Usage
 
-## Usage
-
-### api_key setup
+##### api_key setup
 
 First of all, setup `api_key`. To do this, put a file `ekey.rb` into rails config/initializers directory.
 
@@ -26,7 +33,7 @@ First of all, setup `api_key`. To do this, put a file `ekey.rb` into rails confi
 
 If you aren't using rails, just make shure, api_key fills in before any API methods calls.
 
-### Sending certificate request
+##### Sending certificate request
 
 To send certificate request (csr) to the certificate authority CA, use the `CSR.issue` method
 
@@ -39,7 +46,7 @@ Here is shortened example of the csr in pem format:
 
 Result: a ruby Hash, in format: `{"created_request_id" => <number>}` or `{"error" => <message>}`.
 
-### Getting issued certificates by request ids
+##### Getting issued certificates by request ids
 
 In order to get issued certificates use
 
@@ -54,16 +61,21 @@ Here is the shortened sample of the certificate value:
 
     MIIDZjCCAxOgAwIBAgIKXaz9BwAAAADF1jAKBgYqhQMCAgMFADCBkjEeMBwGCSqG\nSIb3DQEJARYPY29udGFjdEBla2V5LnJ1MQswCQYDVQQGEwJSVTEVMBMGA1UEBwwM\n0JzQvtGB0LrQstCwMTcwNQYDVQQKn8HsQFSfy9BDG+A==\n
 
-
 ## Contributing
 
-1. Fork.
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Please read [Code of Conduct](CODE-OF-CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md) for submitting pull requests to us.
 
+## Versioning
 
-Copyright (c) 2012 by Dmitry Koprov (dkoprov), evrone.com
+We use [SemVer](http://semver.org/) for versioning. 
+For the versions available, see the [tags on this repository](https://github.com/evrone/ekey/tags). 
 
-This project uses MIT LICENSE
+## Authors
+
+* [Dmitry Koprov](https://github.com/dkoprov)
+
+See also the list of [contributors](https://github.com/evrone/ekey/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
